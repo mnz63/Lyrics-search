@@ -22,7 +22,7 @@ async function doSubmit(){
     
     loader.style.display = 'none';
     res.innerHTML = `<div id="song-div">
-                    <p id="song"><pre>`+data.lyrics+`</pre></p>
+                    <p id="song"><pre>`+data.mus[0].text+`</pre></p>
                     </div>`;
 
     if(data.lyrics = "undefined"){
