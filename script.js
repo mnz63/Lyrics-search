@@ -27,7 +27,7 @@ async function doSubmit(){
 
     if(data.lyrics = "undefined"){
         res.innerHTML = `<div id="song-div">
-                        <p id="song"><pre>Não foi possível encontrar a letra desta música! :(</pre></p>
+                        <p id="song"><pre>Não possível encontrar a letra desta música! :(</pre></p>
                         </div>`;
     };
 
