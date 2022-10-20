@@ -21,15 +21,16 @@ async function doSubmit(){
     const data = await response.json();
     
     loader.style.display = 'none';
-    res.innerHTML = `<div id="song-div">
-                    <p id="song"><pre>`+data.mus[0].text+`</pre></p>
-                    </div>`;
-
+    
     if(!data.mus[0].text){
         res.innerHTML = `<div id="song-div">
                         <p id="song"><pre>Não foi possível encontrar a letra desta música!</pre></p>
                         </div>`;
     };
+    
+    res.innerHTML = `<div id="song-div">
+                    <p id="song"><pre>`+data.mus[0].text+`</pre></p>
+                    </div>`;
 
     console.log(data.mus[0].text);
 };
