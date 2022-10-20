@@ -22,7 +22,7 @@ async function doSubmit(){
     
     loader.style.display = 'none';
     
-    if(!data.mus[0].text){
+    if(!data.mus){
         res.innerHTML = `<div id="song-div">
                         <p id="song"><pre>Não foi possível encontrar a letra desta música!</pre></p>
                         </div>`;
