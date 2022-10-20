@@ -5,7 +5,7 @@ const loader = document.getElementById('loader');
 const res = document.getElementById('res');
 
 function search(artist, song){
-    return fetch(`http://api.vagalume.com.br/search.php?art=${artist}&mus=${song}`);
+    return fetch(`https://api.vagalume.com.br/search.php?art=${artist}&mus=${song}`);
 };
 
 form.addEventListener('submit', function(el) {
