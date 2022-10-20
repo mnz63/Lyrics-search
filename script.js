@@ -31,5 +31,5 @@ async function doSubmit(){
                         </div>`;
     };
 
-    console.log(data.lyrics);
+    console.log(data.mus[0].text);
 };
